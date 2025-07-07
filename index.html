@@ -1,0 +1,44 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a//dev/null b/index.html
+index 0000000000000000000000000000000000000000..f398bfb0cd97f41fc9a55bd69c8be671974bdfa2 100644
+--- a//dev/null
++++ b/index.html
+@@ -0,0 +1,35 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>Futurepath Student Dashboard</title>
++  <link rel="stylesheet" href="styles.css">
++  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
++</head>
++<body>
++  <header class="header">
++    <h1>Futurepath Student Dashboard</h1>
++  </header>
++  <nav class="nav">
++    <ul>
++      <li><a href="#">Home</a></li>
++      <li><a href="#">Assignments</a></li>
++      <li><a href="#">Schedule</a></li>
++      <li><a href="#">Profile</a></li>
++    </ul>
++  </nav>
++  <main class="main">
++    <section class="cards">
++      <div class="card">
++        <h2>Upcoming Assignments</h2>
++        <p>No assignments due.</p>
++      </div>
++      <div class="card">
++        <h2>Recent Grades</h2>
++        <p>No grades available.</p>
++      </div>
++    </section>
++  </main>
++</body>
++</html>
+ 
+EOF
+)
