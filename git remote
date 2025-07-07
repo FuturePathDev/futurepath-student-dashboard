@@ -1,0 +1,3 @@
+cd futurepath-student-dashboard  
+git init
+git remote add origin https://github.com/FuturePathDev/futurepath-main.git
